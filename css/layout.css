@@ -1,0 +1,1089 @@
+body {
+  overflow-x: hidden;
+  background-color: #BFBFBF;
+  color: #000;
+  margin: 0; 
+  font-family: "Calibri",Arial,sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:active {
+  color: #376092;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #948A54;
+}
+
+#title, header, #header-msg-bar, 
+label[for="nav-trigger"], 
+.sidebar, .infobox {
+  display: none;
+}
+
+.navigation {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #f1de96;
+}
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.nav-item {
+  margin: 0 auto;
+  font-weight: bold;
+  color: #3F3F3F;
+  border-bottom: 1px solid #3F3F3F;
+  line-height: 3em;
+  cursor: pointer;
+}
+
+.nav-item ul {
+  display: none;
+  line-height: 2em;
+}
+
+.nav-item ul li {
+  font-size: 95%;
+  font-weight: normal;
+  color: #3F3F3F;
+  text-decoration: none;
+  border-top: 1px solid #3F3F3F;
+}
+
+.nav-item ul li a {
+  padding-left: 2.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+a .fa-circle {
+  font-size: 8px;
+  padding-right: 1em;
+}
+
+.fa-files-o, .fa-calendar-o {
+  padding-left: 1.25em;
+}
+
+.nav-item a {
+  padding-left: 1.25em;
+  font-size: 1em;
+  color: #3F3F3F;
+  text-decoration: none;
+}
+
+.nav-item .fa {
+  margin-right: 1em; 
+}
+
+.fa-caret-right {
+  margin-left: 1em;
+}
+
+.fa-caret-down {
+  margin-left: 1em;
+}
+
+.nav-trigger:checked + label {
+  left: 87.5%;
+}
+   
+.nav-trigger:checked ~ .site-wrap {
+  left: 87.5%;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.navigation {  
+  text-decoration: none;
+}
+
+.search-form { 
+  height: 3.5em;
+  margin: 0 auto;
+  color: #3F3F3F;
+}
+
+.search-form input, .search-form button {
+  display: inline-block;
+  margin-top: 0.5em;
+  border-width:0;
+}
+
+.search-form input[type="text"] {
+  height: 2em;
+  width: 50%;
+  margin-left: 0.5em;
+  font-size: 1em;
+  font-family: "Calibri",Arial,sans-serif;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.search-form button[type="submit"] {
+  position: absolute;
+  padding: 0 1em;
+  margin-left: 0.2em;
+  height: 2.5em;
+  font-size: 1em;   
+  background-color: #376092;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.site-wrap {
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding:0;
+}
+
+#image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#art {
+  width: 100%;
+}
+
+.main-content {
+  margin: 0 2em;
+}
+
+.box {
+  border: 1px dotted #b9cde5;
+  margin: 1.25em 0 0 0;
+  padding: 0.625em 1em;
+  width: 18.4375em;
+}
+
+.box a:visited {
+  color: #376092; 
+}
+
+.footer {
+  background-color: #EEF1F6;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: "Calibri",Arial,sans-serif;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left {
+  width: 20%;
+}
+
+/* Library Logo */
+
+#signature img {
+  display: inline-block;
+  padding-right: 1em;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* Footer links */
+
+.footer .footer-company-name {
+  color:  #586E8B;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer .footer-company-about {
+  line-height: 1.25em;
+  color:  #000;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .footer-company-about span {
+  display: block;
+  color:  #586E8B;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+
+/* Footer Center */
+
+.footer .footer-center {
+  width: 40%;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer .footer-center p span {
+  display:block;
+}
+
+.footer .footer-center p a {
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+/* Footer Right */
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer .footer-right p a {
+  color: #5383d3;
+  text-decoration: none;
+}
+
+.footer .footer-icons {
+  margin-top: 1.5em;
+}
+
+.footer .footer-icons a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  color:#fff;
+  border-radius: 2px;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-icons a i {
+  margin-top: 12px;
+} 
+
+#facebook {
+  background-color: #3B5998;
+}
+
+#twitter {
+  background-color: #2CAAE1;
+}
+
+#rss {
+  background-color: #F59036;
+}
+
+/** the Index Page **/
+
+ul.readings-list {
+  margin: 10px 0px 0px 40px;
+  list-style-type: disc;
+}
+
+ul.readings-list li ul {
+  list-style-type: circle !important;
+  margin: 0px 0px 0px 40px;
+  text-transform: none !important;
+}
+
+ul.readings-list li.readings-list-heading,
+ul.readings-list li.readings-list-heading ul li {
+  padding-left: 5px;
+}
+
+#comments {
+  display: block;
+  background-color: #EEF1F6;
+  border: 1px solid #000000;
+  clear: both;
+  margin: 0.625em auto;
+  padding: 0.625em;
+  text-align: center;
+  width: 12em;
+  clear: both;
+}
+
+/** the Contact Us Page **/
+
+.main-text-contact {
+  padding: 9em 1.25em 1.25em 11.5em;
+}
+
+.page-title {
+  border-bottom: 2px solid #DCE6F2;
+  font-size: 1.6875em;
+  margin: 0 50px 20px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.contactform {
+  font-size: 15px;
+}
+
+#contactname, #contactemail, 
+#contactcomments, #cptcha {
+  font-family: "Calibri",Arial,sans-serif;
+  font-size: 1em;
+}
+
+.contactform textarea {
+  display: block;
+}
+
+/** the Lections Page **/
+
+table.lections {
+  border-collapse: collapse;
+  border-style: none;
+}
+
+table.lections td,
+table.lections th {
+  border-top: 1px solid #CDD7E4;
+  border-left: 1px solid #CDD7E4;
+  background-color: #EEF1F6;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+table.lections th {
+  background-color: #CDD7E4;
+  border-color: #EEF1F6;
+  border-top-width: 0px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+table.lections td.first a:link,
+table.lections td.first a:visited,
+table.lections td.first a:hover,
+table.lections td.first a:active {
+  color: #376092; 
+  text-decoration: none;
+}
+
+table.lections td.first a:visited {
+  color: #948A54; 
+}
+
+table.lections td a:link,
+table.lections td a:visited,
+table.lections td a:active {
+  color: #000000; 
+  text-decoration: none;
+}
+
+/** the Texts Page **/
+
+.texts_msg_bar {
+    background-color: #EEECE1;
+    border-top: 1px solid #C4BD97;
+    border-bottom: 1px solid #C4BD97;
+    text-align: center;
+  }
+
+  .dateprev {
+    float: left;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: -2px;
+  }
+
+  .datenext {
+    float: right;
+    font-size: 15px;
+    font-style:normal;
+    letter-spacing:-2px;
+  }
+
+  .texts_msg_bar ul li {
+    display: inline;
+    font-size: 90%;
+  }
+
+  .texts_msg_bar ul li.easter {
+      display: block;
+  }
+
+  .citation {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+/** the Daily Page **/
+
+.copyright {
+  font-size: 0.8em; 
+  font-style: italic;
+}
+
+@media only screen and (max-width: 400px) {
+  body{
+    font-size: 16px;
+  }
+
+  .search-form button[type="submit"] {
+    right: 16%;
+  }
+
+  #title {
+    text-indent: 2em;
+    width: 100%;
+  }
+
+  .box {
+    text-align: center;
+    width: 85%;
+  }
+
+  ul.readings-list {
+    margin: 0 auto 0 1em !important;
+    text-align: left;
+  }
+
+  /** the Index Page **/
+
+  #comments {
+    display: none;
+  }
+
+  /** the Contact Us Page **/
+
+  #contactname, #contactemail {
+    display: inline-block;
+    width: 95%;
+  }
+
+  /** the Lections Page **/
+
+  /** the Texts Page **/
+
+  /** the Daily Page **/
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 849px){
+  body {
+    font-size: 16px;
+  }
+
+  .nav-trigger:checked + label {
+    left: 350px;
+  }
+     
+  .nav-trigger:checked ~ .site-wrap {
+    left: 350px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  }
+
+  .search-form input[type="text"] {
+    max-width: 245px;
+  }
+
+  .search-form button[type="submit"] {
+    left: 250px;
+  }
+
+  #title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .box {
+    display: block;
+    padding: 0 0 0 0.5em;
+    margin: 0.5em 1em 1em 0;
+    width: 95%;
+    overflow: hidden;
+  }
+
+  .label {
+    display: inline;
+    margin-right: 4em;
+  }
+
+  ul.readings-list, ul.readings-list li ul {
+    margin-left: 0.5em;
+  }
+
+  ul.readings-list li.readings-list-heading {
+    float: left;
+    display: block;
+    width: 22%;
+    margin: 0.5em 0 0 1em;
+  }
+
+  ul.readings-list li.readings-list-heading,
+  ul.readings-list li.readings-list-heading ul li {
+    padding-left: 0;
+  }
+
+  /** the Index Page **/
+
+  /** the Contact Us Page **/
+
+  .contactform label {
+    display: block;
+  }
+
+  #contactname, #contactemail{
+    display: inline;
+    float: left;
+    width: 20em;
+    margin-right: 2em;
+    margin-top: 0.8em;
+  }
+
+  .contactform p:nth-child(3) {
+    padding-top: 1em;
+    clear: left;
+  }
+
+  /** the Lections Page **/
+
+  /** the Texts Page **/
+
+  /** the Daily Page **/
+
+}
+
+@media only screen and (max-width: 849px) {
+  #title{
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 2em;
+    max-width: 100%;
+    font-size: 125%;
+    background-color: #9FB9DA;
+    color: #fff;
+  }
+    
+  label[for="nav-trigger"] {
+    display: inline;
+    position: absolute;
+    left: 0px;
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 2;
+    background-color: #9FB9DA;
+    cursor: pointer;
+  }
+
+  label[for="nav-trigger"] img {
+    display: inline;
+    position: absolute;
+    left: 0.625em;
+    top: 0.64em;
+    width: 1.25em;
+    height: 1.28em;
+    z-index: 2;
+  }
+
+  .main-content div {
+    line-height: 1.7em;
+  }
+
+  .main-content div h3 {
+    margin: 0;
+  }
+
+  ul.readings-list {
+    list-style: none;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+
+  /** the Index Page **/
+
+  /** the Contact Us Page **/
+
+  .main-text-contact {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-title {
+    margin: 0 auto;
+  }
+
+  label[for="contactname"], label[for="contactemail"],
+  label[for="contactcomments"], label[for="captcha"] ~ span {
+    display: none;
+  }
+
+  label[for="captcha"] {
+    float: left;
+    margin: 0.25em 0.5em 0.25em 0;
+  }
+
+  #contactname, #contactemail, 
+  #contactcomments, #captcha, 
+  input[name="submitcomments"] { 
+    border-radius: 3px;
+  }
+   
+  #contactcomments {
+    width: 95%;
+  }
+
+  #contactname, #contactemail, 
+  #captcha, input[name="submitcomments"] {
+    height: 2.75em;
+  }
+
+  #captcha {
+    width: 12em;
+  }
+
+  input[name="submitcomments"] {
+    margin-left: 0;
+  }
+  
+  /** the Lections Page **/
+
+  table.lections, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /** Hide table headers 
+  (but not display: none;, for accessibility) **/
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { 
+    border: 1px solid #ccc; 
+  }
+  
+  td { 
+    /** Behave like a "row" **/
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  td:before { 
+    /** Now like a table header **/
+    position: absolute;
+
+    /** Top/left values mimic padding **/
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+  }
+  
+  /** Label the data **/
+  td:nth-of-type(1):before { 
+    content: "Season after Pentecost Year B"; 
+  }
+  td:nth-of-type(2):before { 
+    content: "First* reading and Psalm"; 
+  }
+  td:nth-of-type(3):before { 
+    content: "Alternate* First reading and Psalm"; 
+  }
+  td:nth-of-type(4):before { 
+    content: "Second reading"; 
+  }
+  td:nth-of-type(5):before { 
+    content: "Gospel"; 
+  }
+
+  td.excessive:before { content: ""; }
+
+  /** the Texts Page **/
+
+  #sidebar-texts h4, #sidebar-texts h5 {
+    display: inline-block;
+    margin: 0em 0.5em 0 0;
+  }
+
+  #sidebar-texts h3, #sidebar-texts a, #sidebar-texts .year, 
+  #sidebar-texts ul {
+    display: none;
+  } 
+
+  .texts_msg_bar {
+    margin: 0.5em 0;
+  }
+
+  .datenext {
+    margin-right: 2px;
+  }
+
+  .prayers_infobox {
+    display: none;
+  }
+
+  /** the Daily Page **/
+  
+  .daily_entry {
+    margin-bottom: 1em;
+  }
+
+  div.main-text div.daily_entry h3 {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .site-wrap {
+    background-color: #f9f9f9;
+    margin: 35px auto;  
+    width: 833px; 
+  } 
+
+  .navigation {
+    display: none;
+  }
+
+  header {
+    display: block;
+    background-color: #eef1f6;
+    height: 100px;
+  }
+
+  /** the logo of RCL **/
+
+  .logo {
+    position: relative;
+    left: 50px;
+    top: 10px
+  }
+
+  .searchbox-desktop {
+    background-color: #ebe9dd;
+    float: right;
+    height: 80px; 
+    padding: 10px 20px;
+    width: 250px;
+  }
+
+  .searchbox-desktop label {
+    vertical-align: baseline;
+  }
+
+  .searchbox-desktop img {
+    padding: 0px 5px;
+  }
+
+  .searchbox-desktop p {
+    color: #626264;
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .searchbox-desktop p.searchopts {
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 50px;
+    z-index: 0;
+  }
+
+  #header-msg-bar {
+    display: block;
+    background-color: #b9cde5;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #header-msg-bar a:link,
+  #header-msg-bar a:active,
+  #header-msg-bar a:visited  {
+    color: #000000;
+  }
+
+  #art {
+    margin: -33% 0;
+  }
+
+  .main-content {
+    margin-top: -125px;
+  }
+
+  .sidebar {  
+    display: inline-block;
+    background-color: #F7ECC3; 
+    padding: 30px 5px 20px 15px; 
+    width: 160px;
+    margin: 20px; 
+
+    position: absolute;
+    top: 8em;
+    left: 0;
+    z-index: 5;
+
+    opacity: 0.75;
+  }
+
+  .sidebar a:link,
+  .sidebar a:active,
+  .sidebar a:visited  {
+    color: #000000;
+  }
+
+  li.year {
+    padding-left: 0em;
+  }
+
+  li.season {
+    padding-left: 1em;
+    font-size: 15px;
+  }
+
+  li.liturgical_date {
+    padding-left: 35px;
+    text-indent: -15px;
+    list-style-image: url(../images/bulletDisk.png);
+    list-style-position: inside;
+    font-size: 0.8em;
+  }
+
+  .sidebar li.liturgical_date a:link,
+  .sidebar li.liturgical_date a:active,
+  .sidebar li.liturgical_date a:visited {
+      margin-left: -5px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px 0 0 -10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sidebar h3 {
+    font-size: 1.4em;
+    font-style: italic;
+    margin: 10px 0 20px -10px;
+    text-align: center;
+  }
+
+  .sidebar h4 {
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: -24px 0 0 -10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sidebar h5 {
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 20px -10px;
+    text-align: center;
+  }
+  
+  .main-text {
+    padding: 9em 1.25em 1.25em 13em;
+  }
+
+  .infobox {
+    display: block;
+    background-color: #f6e7b0;
+    float: right;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 125px;
+    clear: right;
+  }
+
+  .second-infobox {
+    background-color: #9fb9da;
+    clear: right;
+    margin-left: 20px;
+  }
+
+  .second-infobox a:link,
+  .second-infobox a:active,
+  .second-infobox a:visited  {
+    color: #000000;
+  }
+
+  .footer div {
+    margin-left: 0.5em;
+  }
+
+  /** the Index Page **/
+
+  /** the Contact Us Page **/
+
+  .infobox-contact {
+    margin-right: -2em;
+  }
+
+  .contactform label {
+    float: left; 
+    margin-right: 10px;
+    text-align: right;
+    width: 6.5em;
+  }
+
+  .contactform input[type="submit"] {
+    margin-left: 8.89em; 
+  }
+
+  /** the Lections Page **/
+
+  table.lections {
+    width: 590px;
+  }
+
+  table.lections td,
+  table.lections th {
+    padding: 3px 10px;
+    width: 105px;
+  }
+
+  table.lections td.first,
+  table.lections th.first {
+    width: 155px;
+    border-left-width: 0px;
+  }
+
+  table.lections li {
+    margin: 0px 20px;
+  }
+
+  /** the Texts Page **/
+  .texts_msg_bar {
+    margin: 0px -52px 20px -40px;
+    padding: 5px;
+  }
+
+  .prayers_infobox {
+    margin: 0px 0px 10px 10px;
+    width: 75px;
+  }
+
+  .prayers_infobox {
+    background-color: #EEECE1;
+    border: 1px solid #C4BD97;
+    font-style: italic;
+    float: right;
+    margin: 30px 0px 20px 20px;
+    padding: 5px 5px 5px 15px;
+  }
+
+  .prayers_infobox ul {
+    list-style-image: url(../images/bulletDisk2.png);
+    margin: 0;
+    padding: 10px;
+  }
+
+  .prayers_infobox li{
+    margin-bottom: 10px;
+  }
+
+  /** the Daily Page **/
+
+}
+
+/** Features only working for desktops are placed here. **/ 
+
+@media only screen and (min-width: 850px) {
+  a:hover {
+    color: #376092;
+    text-decoration: none;
+  }
+
+  #header-msg-bar a:hover {
+    color: #000000;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .second-infobox a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /** Texts Page and Lections Page **/
+
+  .sidebar li.liturgical_date a:hover {
+      margin-left: -5px;
+  }
+
+  /** Lections Page **/
+
+  table.lections td.first a:hover {
+    color: #376092; 
+    text-decoration: none;
+  }
+
+  table.lections td a:hover {
+    color: #000000; 
+    text-decoration: none;
+  }
+}

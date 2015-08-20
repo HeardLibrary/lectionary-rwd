@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="http://www.vanderbilt.edu/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+			<li class="nav-item"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+			<li class="nav-item hasSubmenu"><i class="fa fa-files-o"></i>Resources<i class="fa fa-caret-right"></i>
+				<ul>
+					<li><a href="#"><i class="fa fa-circle"></i>Art</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Prayer</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Hymns</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Colors</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Other Versions</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Daily</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>PDFs</a></li>
+				</ul>
+			</li>
+			<li class="nav-item hasSubmenu"><i class="fa fa-calendar-o"></i>Seasons/Years<i class="fa fa-caret-right"></i>
+				<ul>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Advent</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Christmas</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Epiphany</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Lent</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Holy Week</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Easter</a></li>
+					<li><a href="lections.html"><i class="fa fa-circle"></i>Season After Pentecost</a></li>
+				</ul>
+			</li>
+			<li class="nav-item"><a href="#"><i class="fa fa-cogs"></i>Tools</a></li>
+		</ul>
+		<div class="searchbox">
+			<form action="#" class="search-form">
+				<input type="text" placeholder="Search here...">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+ 
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger">
+		<img src="images/hamburger.gif" alt="hamburger button">
+	</label>
+
+	<div class="site-wrap">
+	    <h1 id="title">Revised Common Lectionary</h1>
+		
+		<header>
+			<div class="searchbox-desktop">
+			<form action="#">
+				<p>	Search
+                    <input type="radio" name="searchtype" id="search-citation" value="citation" checked="checked"><label for="search-citation">Lections</label>
+                    <input type="radio" name="searchtype" value="fulltext"><label for="search-fulltext">Texts</label>
+                    <br>
+                	<input type="text" name="citation" size="20" >
+                	<input type="hidden" name="lookupid" >
+                	<input type="submit" value="go" style="margin-left: 10px;">
+
+                    <a href="index.html" style="font-size: 0.9em;">[?]</a>
+                    		
+                    <a href="#"><img src="images/book.png" alt="Lection Index" title="Citation Index in Canonical Order"></a>
+        	    </p>
+			</form>
+			
+			<p class="searchopts">                 
+              	<a href="#" title="Print Format Options"><img src="images/print.png" alt="Print" title="Print This Page" style="float: left;"></a>
+
+                <a href="#" style="float: left;">
+                    <img src="images/email.png" alt="Email" title="Email This Page">
+                </a>
+                <a href="#"><img src="images/cal.png" alt="iCalendar" title="Put the Lectionary on your calendar"></a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><img src="images/faq.png" alt="FAQ" title="Read the Lectionary FAQ"></a>
+                <a href="contact.html"><img src="images/contact.png" alt="Contact" title="Contact Us"></a>
+            </p>
+			</div>
+			
+			<a href="index.html"><img class="logo" src="images/logo.jpg" alt="the Revised Common Lectionary"></a>
+		</header> <!-- end of header -->
+		
+		<div id="header-msg-bar">a service of the <a href="#">Vanderbilt Divinity Library</a></div>
+
+		<div id="image-container"><img src="images/image.jpg" alt="Art" id="art"></div>
+
+	    <div class="main-content">
+	    	<div class="sidebar">
+				<p><strong>CONTACTING US-</strong></p>
+
+			    <p>Please contact the Divinity Library Staff with questions, comments, corrections and suggestions.</p>
+
+			    <p>Send a message: <br/>
+			    <a href="#">Click here</a></p>
+
+			    <p>Call on the phone: <br/>615-322-2865</p>
+
+			    <p>Write a letter: <br/>
+			    Vanderbilt University Divinity Library<br/>
+			    419 21st Ave., S.<br/>
+			    Nashville, TN<br/>
+			    37203-2427</p>
+            </div>  <!-- end 'sidebar' div -->
+
+           	<div class="main-text-contact">
+           		<div class="infobox infobox-contact">
+            	    If you would like for us to contact you in a way other than email, please provide alternative contact information in your comments.
+                </div>
+
+                <div class="page-title">Contact Us</div>
+
+           		<form action="#" class="contactform">
+			        <p><label for="contactname">Name:</label><input type="text" name="contactname" id="contactname" size="25" value="" /></p>
+			        <p><label for="contactemail">Email Address:</label><input type="text" name="contactemail" id="contactemail" size="25" value="" /></p>
+			        <p><label for="contactcomments">Questions or Comments:</label><textarea name="contactcomments" id="contactcomments" rows="10" cols="35"></textarea></p>
+			        <p><label for="captcha">What is 1 + 11?</label><input type="text" name="captcha" id="captcha" size="2" maxlength="2" /> <span>(This helps us fight spam.)</span></p>
+			        <p><input type="hidden" name="ipinfo" id="ipinfo" value="69.245.9.198" /></p>
+			        <input type="submit" value="Submit &gt;&gt;" name="submitcomments" />
+			    </form>
+           	</div> <!-- end of main-text -->
+		</div> <!-- end of main-content -->
+
+		<footer class="footer">
+			<div class="footer-left">
+
+				<a id="signature"><img src="images/signature_divinity.gif" alt="signature"></a>
+
+				<p class="footer-company-name">Jean and Alexander Heard Library</p>
+			</div>
+
+			<div class="footer-center">
+				<p class="footer-company-about">
+					<span>Copyrights</span>
+                    Scripture texts are from the New Revised Standard Version of the Bible.  Lections are from the Revised Common Lectionary Daily Readings.  See the <a href="#">Terms of Use</a> for copyright details.
+				</p>
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About Us</span>
+                    The online Revised Common Lectionary is a project of the <a href="#">Vanderbilt Divinity Library</a>, a division of the <a href="#">Jean and Alexander Heard Library</a>.
+				</p>
+
+				<div class="footer-icons">
+					<a title="Share on Facebook" href="http://www.facebook.com/share.php?u=http://lectionary.library.vanderbilt.edu/index.php?" target="_blank" id="facebook"><i class="fa fa-facebook"></i></a>
+					<a title="Share on Twitter" href="https://twitter.com/share?original_referer=http://lectionary.library.vanderbilt.edu/index.php&text=Revised Common Lectionary&url=http://lectionary.library.vanderbilt.edu/index.php?" target="_blank" id="twitter"><i class="fa fa-twitter"></i></a>
+					<a title="Subscribe to the Lectionary RSS Feed" href="feeds/lectionary.xml" id="rss"><i class="fa fa-rss"></i></a>
+				</div>
+			</div> <!-- end of footer-right -->
+		</footer>
+	</div> <!-- end of site-wrap -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/websiteFunctionalities.js"></script>
+</body>
+</html>
